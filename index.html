@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seinfeld Guessing Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <img class="logo" src="assets/images/logo.png">
+        <h1 class="text-center">Guessing Game</h1>
+        <br>
+        <h3 class="text-center">Hit the target number by clicking on your favorite Seinfeld character!</h3>
+        <br>
+        <h1>Number to Reach: <span id="number-to-guess"></span></h1>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+    
+          <!-- Gems Card -->
+        <div class="col-xs-6 col-sm-8 col-lg-12 game">
+            <div class="card">
+              <h3 class="card-header"></h3>
+    
+            <div class="card-body">
+                <img id="gem-1" class="btn gem" src='./assets/images/seinfeld.jpg'>
+                <img id="gem-2" class="btn gem" src='./assets/images/elaine.jpg'>
+                <img id="gem-3" class="btn gem" src='./assets/images/george.jpg'>
+                <img id="gem-4" class="btn gem" src='./assets/images/kramer.jpeg'>
+                <br><br>
+            </div>
+            </div>
+        </div>
+    
+          <!-- Resulting Score -->
+        <div class="col-xs-6 col-sm-8 col-lg-10 result-text">
+            <div class="card">
+                <h3 class="card-header result">Result: <span id="result"></span></h3>
+            </div>
+            <h4 class="card card-header" id="resultbox"></h4>
+        </div>
+       
+        <button id="button-clear" class="btn btn-dark clear" value="clear"><h1>clear</h1></button>
+    </div>
+    </div>
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</script>    
+</body>
+</html>
