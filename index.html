@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Seinfeld Guessing Game</title>
+    <title>Do you know Adam West?</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="jumbotron">
-        <img class="logo" src="assets/images/logo.png">
-        <h1 class="text-center">Guessing Game</h1>
+        <h1>ADAM WEST Trivia Game</h1>
         <br>
-        <h3 class="text-center">Hit the target number by clicking on your favorite Seinfeld character!</h3>
+        <p id="photo" class="showImage"></p>
         <br>
-        <h1>Number to Reach: <span id="number-to-guess"></span></h1>
+        <h1>Seconds Left: <span id="seconds-left"></span></h1>
     </div>
     
     <div class="container">
         <div class="row">
     
-          <!-- Gems Card -->
+          <!-- Trivia Card -->
         <div class="col-xs-6 col-sm-8 col-lg-12 game">
-            <div class="card">
-              <h3 class="card-header"></h3>
-    
+            <div class="card question-area">
+              <h3 class="card-header" id="question"></h3>
             <div class="card-body">
-                <img id="gem-1" class="btn gem" src='./assets/images/seinfeld.jpg'>
-                <img id="gem-2" class="btn gem" src='./assets/images/elaine.jpg'>
-                <img id="gem-3" class="btn gem" src='./assets/images/george.jpg'>
-                <img id="gem-4" class="btn gem" src='./assets/images/kramer.jpeg'>
+                <button id="answer-0" class="btn btn-primary trivia"></button>
+                <button id="answer-1" class="btn btn-primary trivia"></button>
+                <button id="answer-2" class="btn btn-primary trivia"></button>
+                <button id="answer-3" class="btn btn-primary trivia"></button>
                 <br><br>
             </div>
             </div>
@@ -37,18 +35,17 @@
           <!-- Resulting Score -->
         <div class="col-xs-6 col-sm-8 col-lg-10 result-text">
             <div class="card">
-                <h3 class="card-header result">Result: <span id="result"></span></h3>
+                <h3 class="card-header result">Answer: <span id="result"></span></h3>
             </div>
             <h4 class="card card-header" id="resultbox"></h4>
         </div>
        
-        <button id="button-clear" class="btn btn-dark clear" value="clear"><h1>clear</h1></button>
+        <button id="button-clear" class="btn btn-dark clear" value="clear"><h1>play</h1><h1>again</h1></button>
     </div>
     </div>
     
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
-
-</script>    
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+  
 </body>
-</html>
+

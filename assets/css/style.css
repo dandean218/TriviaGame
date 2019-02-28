@@ -1,0 +1,43 @@
+
+body {
+  background-color: black;
+}
+
+.jumbotron {
+    background-color: gray;
+    text-shadow:
+		-1px -1px 0 #0060A8,
+		1px -1px 0 #0060A8,
+		-1px 1px 0 #0060A8,
+		1px 1px 0 #0060A8;
+    color: white;
+    text-align: center;
+}
+
+
+
+.trivia{
+    width: 200px;
+    margin-left:20px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+
+.btn {
+    background-color:#FDE311;
+    color: black;
+    border-color:black;
+}
+
+.btn:hover {
+    background-color:black;
+    color: #FDE311;
+    border-color:#FDE311;
+}
+
+.card{
+    margin-bottom:20px;
+    border: 5px solid #0060A8;
+    background-color: #fffade; /* or try #fff5bd */
+}
